@@ -1,14 +1,42 @@
+:root{
+  --darkblue: #13293d;
+}
+*{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #13293d;
-    color: #fff;
+    background-color: var(--darkblue);
   }
 
-a{
+header h1 {
+  font-size:40px;
+  color: #fff;
+  background-color:#13293d;
+}
+
+header nav ul li{
+  display: inline-block;
+  margin: 2px;
+}
+
+header nav ul li a{
     color: #fff;
+}
+.hero-image {
+  background-image: url("https://i.gifer.com/4pur.gif");
+  background-color: var(--darkblue);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size:cover;
+  position: relative;
+
 }
 
 body {
