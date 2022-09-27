@@ -51,9 +51,9 @@ section {
   padding:5px;
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 section h2{
+  flex: 1 0 32%;
   width: 32%;
   border-right: 4px solid var(--dark);
   padding-right: 10%;
@@ -61,17 +61,13 @@ section h2{
 }
 section p{
   width: 65%;
-}
-
-section ul{
-  width:65%;
-  display: flex;
-  justify-content: space-around;
+  margin-left: 10px;
 }
 
 .card-list{
   display:flex;
   flex-wrap: wrap;
+  margin-left: 10px;
 }
 
 section div article {
@@ -102,6 +98,13 @@ section div article div p{
 
 #code-refactor {
   flex: 2 0 auto;
+}
+
+section ul{
+  width:65%;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
 }
 
 footer{
