@@ -64,7 +64,7 @@ section p{
 }
 
 .card-list{
-  flex: 1 0 auto;
+  flex: 1 0 200px;
   display:flex;
   align-content: stretch;
   flex-wrap: wrap;
@@ -73,8 +73,8 @@ section p{
 
 section div article {
   display: flex;
-  flex-direction: column;
-  width: 65%;
+  flex-direction: row;
+  flex: 1 0 40%;
   border: 2px solid var(--dark);
   border-radius: 3px;
   background-image: url(https://images.pexels.com/photos/8580327/pexels-photo-8580327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -98,7 +98,7 @@ section div article div p{
 }
 
 #code-refactor {
-  flex: 2 1 auto;
+  flex: 2 0 100%;
 }
 
 section ul{
@@ -110,4 +110,10 @@ section ul{
 
 footer{
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  
+}
+@media screen and (min-width: 992px) {
+  
 }
