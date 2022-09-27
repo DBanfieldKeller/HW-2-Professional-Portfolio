@@ -71,10 +71,10 @@ section p{
   margin-left: 10px;
 }
 
-section div article {
+section div a {
   display: flex;
   flex-direction: row;
-  flex: 1 0 40%;
+  flex: 1 0 50%;
   border: 2px solid var(--dark);
   border-radius: 3px;
   background-image: url(https://images.pexels.com/photos/8580327/pexels-photo-8580327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
@@ -82,18 +82,25 @@ section div article {
   background-size: cover;
 }
 
-section div article div{
+section div a article {
+  display: flex;
+  flex-direction: row;
+  flex: 1 0 60%;
+  
+}
+
+section div a article div{
   position: relative;
   width: 140px;
   border: 1px solid var(--dark);
   background-color: rgb(78, 78, 105);
 }
 
-section div article div h3{
+section div a article div h3{
   font-size: 20px;
 }
 
-section div article div p{
+section div a article div p{
   font-size: 15px;
 }
 
