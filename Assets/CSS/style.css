@@ -1,5 +1,6 @@
 :root{
   --dark: #13293d;
+  --light: #fff;
 }
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -24,7 +25,7 @@ header {
 
 header h1 {
   font-size:40px;
-  color: #fff;
+  color: var(--light);
 }
 
 header nav ul li{
@@ -33,7 +34,7 @@ header nav ul li{
 }
 
 header nav ul li a{
-  color: #fff;
+  color: var(--light);
 }
 
 .hero-image {
@@ -106,7 +107,7 @@ section div a div{
 section div a div h3{
   width: 100%;
   font-size: 20px;
-  color:#fff;
+  color:var(--light);
   text-orientation: upright;
 }
 
@@ -114,7 +115,7 @@ section div a div p{
   width: 100%;
   font-size: 15px;
   background-color: var(--dark);
-  color: #fff;
+  color: var(--light);
 }
 
 #code-refactor {
