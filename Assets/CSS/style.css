@@ -4,7 +4,6 @@
 *{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: black;
-  border: 1px solid black;
   box-sizing: border-box;
 }
 
@@ -51,6 +50,7 @@ section {
   padding:5px;
   display: flex;
 }
+
 section h2{
 
   width: 32%;
@@ -59,7 +59,7 @@ section h2{
   font-size: 25px;
 }
 section p{
-  width: 65%;
+  width: 49%;
   margin-left: 10px;
 }
 
@@ -74,38 +74,53 @@ section p{
 section div a {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
   flex: 1 0 50%;
+  height: 150px;
   border: 2px solid var(--dark);
   border-radius: 3px;
   background-image: url(https://images.pexels.com/photos/8580327/pexels-photo-8580327.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
   background-repeat: no-repeat;
   background-size: cover;
+  opacity:0.5;
+  transition: 1s ease;
 }
 
-section div a article {
+section div a:hover {
+  opacity:1;
+  transition: 1s ease;
+}
+
+section div a div{
   display: flex;
-  flex-direction: row;
-  flex: 1 0 60%;
-  
-}
-
-section div a article div{
-  position: relative;
+  flex-direction: column;
   width: 140px;
+  height: 50px;
   border: 1px solid var(--dark);
-  background-color: rgb(78, 78, 105);
+  background-color: var(--dark);
 }
 
-section div a article div h3{
+section div a div h3{
+  width: 100%;
   font-size: 20px;
+  color:#fff;
+  text-orientation: upright;
 }
 
-section div a article div p{
+section div a div p{
+  width: 100%;
   font-size: 15px;
+  background-color: var(--dark);
+  color: #fff;
 }
 
 #code-refactor {
   flex: 2 0 100%;
+  height:300px;
+  background-image: url(../../Assets/images/Screenshot1.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section ul{
